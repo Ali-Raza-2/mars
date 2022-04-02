@@ -1,0 +1,4 @@
+------shopping-cart------
+position=top right corner
+color=white
+refer=sales
