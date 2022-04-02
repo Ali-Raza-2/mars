@@ -1,0 +1,4 @@
+removed the bug that prevented users from signing up.
+engine 1.1
+removed the bug that prevented users from signing in.
+engine 1.2
