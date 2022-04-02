@@ -1,0 +1,4 @@
+This is the title bar of the app.
+font-size=16
+bar-colour=blue
+boder-shape=round
