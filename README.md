@@ -1,3 +1,2 @@
 # mars
-a new line of code
-yet another line of code
+This is just a git practice repository.
