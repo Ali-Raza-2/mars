@@ -1,4 +1,0 @@
-introduced the buttons to the app
-color--> green,purple,yellow
-shape--> round
-map--> icons

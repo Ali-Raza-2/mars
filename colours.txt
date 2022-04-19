@@ -1,3 +1,0 @@
-colors--> purple,pink,green,
-secondary_colors--> red,yellow,blue
-map --> sat blue

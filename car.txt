@@ -1,5 +1,0 @@
-Here lies the details about toy car.
-colour --> yellow
-type --> battery
-controls --> RC
-base --> reflect effect
