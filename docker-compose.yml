@@ -1,0 +1,40 @@
+version: "3"
+
+services:
+  vprodb:
+    image: aliraza14/vprodb:V1
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=vprodbpass  
+    volumes:
+      - vprodbdata:/var/mysql/lib  
+
+  vprocache01:
+    image: memcached 
+    ports:
+      - 11211:11211
+
+  vpromq01:
+    image: rabbitmq
+    ports:
+      - 15672:15672
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest  
+      - RABBITMQ_DEFAULT_PASS=guest
+
+  vproapp:
+    image: aliraza14/vproapp:V1
+    ports:
+      - 8080:8080
+    volumes:
+      - vproappdata:/usr/local/tomcat/webapps
+
+  vproweb:
+    image: aliraza14/vproweb:V1
+    ports:
+      - 80:80
+
+volumes:
+  vprodbdata: {}
+  vproappdata: {}
