@@ -31,7 +31,7 @@ spec:
                 secretKeyRef:
                   name: app-secret
                   key: db-pass
-      NodeSelector:
+      nodeSelector:
         zone: ap-south-1a
       volumes:
         - name: vpro-db-data
