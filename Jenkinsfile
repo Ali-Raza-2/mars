@@ -67,7 +67,7 @@ pipeline {
         }
 
 
-        stage('Building image') {
+        stage('Building Image') {
             steps{
               script {
                 dockerImage = docker.build registry + ":$BUILD_NUMBER"
@@ -75,7 +75,7 @@ pipeline {
             }
         }
         
-        stage('Deploy Image') {
+        stage('Shipping Image') {
           steps{
             script {
               docker.withRegistry( '', registryCredential ) {
@@ -86,7 +86,7 @@ pipeline {
           }
         }
 
-        stage('Remove Unused docker image') {
+        stage('Remove Unused Docker Image') {
           steps{
             sh "docker rmi $registry:$BUILD_NUMBER"
           }
